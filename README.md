@@ -11,4 +11,10 @@ npm install -g
 
 npm install
 npm install minio
+
+npm i aws-sdk
+ npm i dotenv
 ```
+
+- create s3 bucket
+- create iam user and access keys
