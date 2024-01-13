@@ -1,0 +1,27 @@
+{
+  "name": "minio-learning",
+  "version": "1.0.0",
+  "description": "learning MinIO",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "MinIo-Learning"
+  },
+  "keywords": [
+    "MinIo",
+    "S3",
+    "Endpoints"
+  ],
+  "author": "Gayathri",
+  "license": "ISC",
+  "dependencies": {
+    "aws": "^0.0.3-2",
+    "minio": "^7.1.3"
+  },
+  "devDependencies": {
+    "@types/minio": "^7.1.1"
+  }
+}

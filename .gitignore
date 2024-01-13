@@ -40,6 +40,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+minio-js/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
