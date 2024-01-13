@@ -18,3 +18,8 @@ npm i aws-sdk
 
 - create s3 bucket
 - create iam user and access keys
+
+## References
+
+- To setup the environment variables - 
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
