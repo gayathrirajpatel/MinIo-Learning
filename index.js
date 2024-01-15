@@ -49,3 +49,5 @@ s3.upload(params, function (err, data) {
 });
 }
 uploadFile(filePath, bucketName , newFileName);
+
+
