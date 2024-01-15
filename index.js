@@ -3,6 +3,10 @@ dotenv.config();
 
 // Load the SDK for JavaScript
 var AWS = require('aws-sdk');
+// var filePath = require('./mdf');
+var fs = require('fs');
+const { error } = require('console');
+const { listenerCount, listeners } = require('process');
 // Set the Region 
 AWS.config.update({region: 'us-east-1'});
 
@@ -21,3 +25,27 @@ s3.listBuckets(function(err, data) {
     console.log("Success", data.Buckets);
   }
 });
+
+
+bucketName = "upload-media-through-nodejs"
+newFileName = "file.js"
+filePath = "/workspaces/MinIo-Learning/mdf.js"
+console.log(filePath)
+function uploadFile(filePath, bucketName , newFileName){
+  const fileStream = fs.createReadStream(filePath);
+  fileStream.on('error', (err) => {
+    console.log("FileError :"+ err)
+  })
+
+const params = {
+  Bucket: bucketName,
+  Key: newFileName,
+  Body: fileStream
+}
+
+s3.upload(params, function (err, data) {
+  if (err) console.log(err, err.stack); // an error occurred
+  else     console.log("Success",data.location);           // successful response
+});
+}
+uploadFile(filePath, bucketName , newFileName);
