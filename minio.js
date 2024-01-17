@@ -18,7 +18,7 @@ var minioClient = new Minio.Client({
 var file = '/workspaces/MinIo-Learning/mdf.js'
 
 // Make a bucket called europetrip.
-minioClient.makeBucket('indiatrip6', 'us-east-1', function (err) {
+minioClient.makeBucket('indiatrip7', 'us-east-1', function (err) {
   if (err) return console.log(err)
 
   console.log('Bucket created successfully in "us-east-1".')
@@ -29,7 +29,7 @@ minioClient.makeBucket('indiatrip6', 'us-east-1', function (err) {
     example: 5678,
   }
   // Using fPutObject API upload your file to the bucket europetrip.
-  minioClient.fPutObject('indiatrip6', 'fileC.js', file, metaData, function (err, etag) {
+  minioClient.fPutObject('indiatrip7', 'fileC.js', file, metaData, function (err, etag) {
     if (err) return console.log(err)
     console.log('File uploaded successfully.')
   })

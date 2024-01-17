@@ -24,3 +24,4 @@ npm i aws-sdk
 - To setup the environment variables 
 https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 
+Cneck env 
