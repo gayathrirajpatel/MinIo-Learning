@@ -12,7 +12,7 @@ npm install -g
 npm install
 npm install minio
 
-npm i aws-sdk
+ npm i aws-sdk
  npm i dotenv
 ```
 
