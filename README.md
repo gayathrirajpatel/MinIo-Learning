@@ -9,6 +9,8 @@ cd minio-js
 npm install
 npm install -g
 
+==============================
+
 npm install
 npm install minio
 
